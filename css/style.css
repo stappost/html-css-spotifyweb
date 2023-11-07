@@ -3,3 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* MACRO BLOCCHI */
+#top{
+    display: flex;
+    background-color: yellow;
+}
+#sidebar{
+    height: calc(100vh - 100px);
+    width: 75px;
+    background-color: blue;
+}
+#main-content{
+    background-color: green;
+    width: calc(100vw - 75px);
+    height: calc(100vh - 100px);
+}
+#bottom{
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+}
+header{
+    height: 100px;
+    width: calc(100vw - 75px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
