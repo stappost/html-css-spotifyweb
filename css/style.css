@@ -138,6 +138,13 @@ hr{
     margin: 10px 20px 20px 20px ;
     color: lightslategray;
 }
+#sidebar h4{
+    margin: 20px 10px;
+}
+#sidebar li.grey{
+    margin: 10px;
+    list-style-type: none;
+}
 /* BLOCKS FOOTER  */
 #bottom .row{
     justify-content: space-around;
@@ -192,6 +199,8 @@ hr{
     }
     .logo{
         width: 20%;
+        vertical-align: center;
+        display: flex;
     }
 }
 @media screen and (min-width: 768px) {
