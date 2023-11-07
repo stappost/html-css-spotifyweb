@@ -13,6 +13,9 @@
 .wrap{
     flex-wrap: wrap;
 }
+.hidden{
+    display: none;
+}
 /* MACRO BLOCCHI */
 #top{
     display: flex;
@@ -40,6 +43,7 @@ header{
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
+    right: 0;
 }
 /* BLOCK HEADER  */
 header .row{
@@ -64,6 +68,10 @@ header .row{
     justify-content: space-between;
     flex-wrap: nowrap;
 }
+/* BLOCKS FOOTER  */
+#bottom .row{
+    justify-content: space-around;
+}
 
 /* COLUMN  */
 .col-20{
@@ -74,7 +82,7 @@ header .row{
     margin: 10px;
 }
 .col-30{
-    width: 30%;
+    width: calc(30% - 20px);
     background-color: blueviolet;
     height: 50px;
     border: 1px solid black;
@@ -99,6 +107,12 @@ header .row{
 @media screen and (min-width: 576px) {
     #sidebar{
         width: 200px;
+    }
+    header{
+        width: calc(100vw - 200px);
+    }
+    .hidden{
+        display: inline;
     }
 }
 @media screen and (min-width: 768px) {
