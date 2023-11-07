@@ -111,8 +111,11 @@ header .row{
     header{
         width: calc(100vw - 200px);
     }
+    #main-content{
+        width: calc(100vw - 200px);
+    }
     .hidden{
-        display: inline;
+        display: inline; 
     }
 }
 @media screen and (min-width: 768px) {
