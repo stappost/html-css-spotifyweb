@@ -7,6 +7,12 @@
 .margin-top-100{
     margin-top: 100px;
 }
+.d-flex{
+    display: flex;
+}
+.wrap{
+    flex-wrap: wrap;
+}
 /* MACRO BLOCCHI */
 #top{
     display: flex;
@@ -90,3 +96,18 @@ header .row{
     height: 50px;
 }
 
+@media screen and (min-width: 576px) {
+    #sidebar{
+        width: 200px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .col-50{
+        width: calc(100% / 4 - 20px);
+    }
+}
+@media screen and (min-width: 992px) {
+    .col-50{
+        width: calc(100% / 6 - 20px);
+    }
+}
