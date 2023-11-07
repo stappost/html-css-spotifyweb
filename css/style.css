@@ -32,6 +32,9 @@
 .white{
     color: white;
 }
+.grey{
+    color: gray;
+}
 /* MACRO BLOCCHI */
 #top{
     display: flex;
@@ -98,9 +101,15 @@ header button{
 
 h3{
     font-size: 30px;
+    margin-top: 20px;
 }
 .content > img{
     width: 100%;
+}
+div.white{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
 }
 
 
@@ -144,16 +153,16 @@ hr{
 }
 .col-30{
     width: calc(30% - 20px);
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     height: 50px;
     border: 1px solid black;
     margin: 10px;
 }
 .col-50{
     width: calc(50% - 20px);
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     /* height: 200px; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 10px;
 }
 
