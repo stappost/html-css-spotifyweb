@@ -131,7 +131,7 @@ div.white{
 }
 .small{
     height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 hr{
     width: 80%;
@@ -141,13 +141,33 @@ hr{
 #sidebar h4{
     margin: 20px 10px;
 }
+#sidebar span.grey{
+    padding-top: 10px;
+}
 #sidebar li.grey{
     margin: 10px;
     list-style-type: none;
 }
+#sidebar span.white{
+    padding: 10px;
+    font-size: 20px;
+}
+
 /* BLOCKS FOOTER  */
 #bottom .row{
     justify-content: space-around;
+}
+
+#bottom .img-song img{
+    width: 50px;
+    height: 50px;
+    
+}
+#bottom div.white{
+    margin: 5px 10px;
+}
+#bottom div.grey{
+    margin: 0px 10px;
 }
 
 /* COLUMN  */
@@ -197,9 +217,10 @@ hr{
     .show{
         display: none;
     }
+    .logo img{
+        width: 40px;
+    }
     .logo{
-        width: 20%;
-        vertical-align: center;
         display: flex;
     }
 }
