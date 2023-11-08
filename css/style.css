@@ -7,6 +7,10 @@
 .margin-top-100{
     margin-top: 100px;
 }
+.margin-10{
+     
+    margin: 10px;
+}
 .d-flex{
     display: flex;
 }
@@ -171,9 +175,15 @@ h3{
 }
 .img-logo img,
 .logo img{
-    width: 100%;
+    width: 80%;
     padding: 5px;
-   
+    margin-left: 5px;
+
+}
+.hidden i.fa-square-plus{
+    font-size: 40px;
+    margin-right: 5px;
+    vertical-align: middle;
 }
 .small{
     height: 30px;
@@ -187,13 +197,13 @@ h3{
     color: lightslategray;
 }
 #sidebar h4{
-    margin: 20px 10px;
+    margin: 20px 0 5px 10px;
 }
 #sidebar span.grey{
     padding-top: 10px;
 }
 #sidebar li.grey{
-    margin: 10px;
+    margin: 20px 10px;
     list-style-type: none;
 }
 #sidebar span.white{
@@ -201,7 +211,7 @@ h3{
     font-size: 20px;
 }
 #sidebar ul.overflow{
-    height: 25vh;
+    height: 35vh;
     overflow-y: auto;
 }
 #sidebar i{
@@ -260,10 +270,10 @@ h3{
     vertical-align: middle;
 }
 .player i.bigger{
-    font-size: 25px;
+    font-size: 30px;
 }
 i.bigger:hover{
-    font-size: 30px;
+    font-size: 35px;
     cursor: pointer;
 }
 hr.bg_gray-song{
@@ -344,14 +354,10 @@ hr.bg_white{
     cursor: pointer;
 }
 /* COLUMN  */
-.col{
-     
-    margin: 10px;
-}
+
 .col-30{
     width: calc(100% / 3 - 20px);
     height: 50px;
-    margin: 10px 0;
     position: relative;
 }
 .xl{
@@ -385,7 +391,7 @@ hr.bg_white{
         display: none;
     }
     .logo img{
-        width: 30px;
+        width: 40px;
     }
     .img-logo img{
         width: 80%;
@@ -411,17 +417,30 @@ hr.bg_white{
         height: 50px;
         
     }
-    
-    
-}
-@media screen and (min-width: 768px) {
+    #bottom .icons.right i{
+        padding: 10px;
+    }
     .col-50{
         width: calc(100% / 4 - 20px);
     }
-   
+    
+    
 }
+
 @media screen and (min-width: 992px) {
     .col-50{
         width: calc(100% / 6 - 20px);
     }
+    /* #bottom .xl i{
+        padding: 0 10px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    #bottom .icons.right i{
+        padding: 10px;
+    }
+    #bottom .xl i.bigger{
+        font-size: 40px;
+        padding: 0 20px;
+    } */
 }
