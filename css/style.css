@@ -107,7 +107,7 @@ h3{
 .content > img{
     width: 100%;
 }
-div.white{
+#top div.white{
     font-size: 20px;
     font-weight: 600;
     margin: 10px 0;
@@ -163,39 +163,38 @@ hr{
 }
 /* BLOCKS FOOTER  */
 #bottom .row{
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 10px ;
 }
 
 #bottom .img-song img{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     
 }
-#bottom div.white{
-    margin: 5px 10px;
-}
-#bottom div.grey{
-    margin: 0px 10px;
-}
+
 .long{
     text-align: center;
 }
 #bottom .long input{
     width: 80%;
 } 
-.icons{
+.icons div{
     display: flex;
     text-align: center;
+    flex-direction: column;
 }
 
-.icons div i{
-    padding: 20px 10px;
+.icons i{
+    padding: 5px;
 }
+
+
 .player{
     text-align: center;
 }
 .player i{
-    padding: 10px 10px;
+    padding: 10px 5px;
     vertical-align: middle;
 }
 .player i.bigger{
@@ -217,10 +216,13 @@ hr{
     margin: 10px;
 }
 .col-30{
-    width: calc(30% - 20px);
+    width: calc(100% / 3 - 20px);
     /* background-color: blueviolet; */
     height: 50px;
-    margin: 10px;
+    margin: 10px 0;
+}
+.xl{
+    width: 150px;
 }
 .col-50{
     width: calc(50% - 20px);
@@ -263,11 +265,32 @@ hr{
     .logo{
         display: flex;
     }
+    .icons div{
+        display: inline-block;
+        padding-top: 10px;
+    }
+    .col-30{
+        width: calc(100% / 3 - 20px);
+    }
+    #bottom div.white{
+        margin: 5px 10px;
+    }
+    #bottom div.grey{
+        margin: 0px 10px;
+    }
+    #bottom .img-song img{
+        width: 50px;
+        height: 50px;
+        
+    }
+    
+    
 }
 @media screen and (min-width: 768px) {
     .col-50{
         width: calc(100% / 4 - 20px);
     }
+   
 }
 @media screen and (min-width: 992px) {
     .col-50{
