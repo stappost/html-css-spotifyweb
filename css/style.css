@@ -55,6 +55,7 @@
     height: 100px;
     width: 100%;
     background-color: rgb(71, 71, 71);
+    position: fixed;
 }
 header{
     height: 100px;
@@ -152,7 +153,10 @@ hr{
     padding: 10px;
     font-size: 20px;
 }
-
+#sidebar ul.overflow{
+    height: 20vh;
+    overflow-y: auto;
+}
 /* BLOCKS FOOTER  */
 #bottom .row{
     justify-content: space-around;
@@ -168,6 +172,12 @@ hr{
 }
 #bottom div.grey{
     margin: 0px 10px;
+}
+.long{
+    text-align: center;
+}
+#bottom .long input{
+    width: 80%;
 }
 
 /* COLUMN  */
