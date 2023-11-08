@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify</title>
 </head>
@@ -26,7 +27,7 @@
                                 </ul>
                                 <h4 class="hidden white">PLAYLIST</h4>
                                 <div class="hidden grey">
-                                    <span class="logo"></span>Crea Playlist
+                                    <i class="fa-duotone fa-square-plus" style="--fa-primary-color: #000000; --fa-secondary-color: #3d3d3d;"></i>Crea Playlist
                                 </div>    
                                 <ul class="hidden overflow">
                                     <li class="grey">Nome Playlist</li>
@@ -207,21 +208,27 @@
                                 <div class="grey">Brano Nome</div>
                             </div>
                             <div class="icons">  
-                                <div></div>
-                                <div></div>
+                                <div><i class="fa-regular fa-heart" style="color: #808080;"></i></div>
+                                <div><i class="fa-regular fa-folder" style="color: #5c5c5c;"></i></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-30">
-                        <div>icone</div>
+                        <div class="player">
+                            <i class="fa-solid fa-shuffle" style="color: #ffffff;"></i>
+                            <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i>
+                            <i class="fa-regular fa-circle-play bigger" style="color: #ffffff;"></i>
+                            <i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
+                            <i class="fa-solid fa-rotate-left" style="color: #ffffff;"></i>
+                        </div>
                         <div class="long"><input type="range"></div>
                     </div>
                     <div class="col-30">
                         <div class="icons">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                            <div><i class="fa-solid fa-list-ul" style="color: #ffffff;"></i></div>
+                            <div><i class="fa-solid fa-display" style="color: #ffffff;"></i></div>
+                            <div><i class="fa-solid fa-volume-high" style="color: #ffffff;"></i></div>
+                            <hr>
                         </div>
                     </div>
                 </div>
