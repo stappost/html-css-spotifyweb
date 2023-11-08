@@ -81,6 +81,10 @@ header button{
     border-radius: 20px;
     padding: 10px 40px;
 }
+header button:hover{
+    cursor: pointer;
+    font-size: 90px;
+}
 /* BLOCKS IN MAIN-CONTENT  */
 .container{
     width: 100%;
@@ -99,7 +103,7 @@ header button{
 .col-100 ul.d-flex li{
     margin: 10px 10px 20px 0px;
     color: gray;
-    font-weight: 550;
+    font-weight: 500;
     font-size: 15px;
 }
 
@@ -114,6 +118,10 @@ h3{
     font-size: 20px;
     font-weight: 600;
     margin: 10px 0;
+}
+#main-content li:hover{
+    color: white;
+    cursor: pointer;
 }
 
 
@@ -164,6 +172,10 @@ hr{
     width: 20%;
     margin-left: 10px;
 }
+#sidebar .grey:hover{
+    color: white;
+    cursor: pointer;
+}
 /* BLOCKS FOOTER  */
 #bottom .row{
     justify-content: space-between;
@@ -203,42 +215,43 @@ hr{
 .player i.bigger{
     font-size: 25px;
 }
-hr.green-song{
+hr.bg_gray-song{
     border: none;
     width: 70%;
     float: right;
     border-radius: 0 25px 25px 0;
     height: 5px;
     margin: 0;
-    background: rgb(255, 255, 255);
+    background: rgb(118, 117, 117);
 }
-hr.white-song{
+hr.bg_white-song{
     border: none;
     float: right;
     width: 30%;
-    background-color: green;
+    background-color: rgb(255, 255, 255);
     height: 5px;
     margin: 0;
     border-radius: 25px 0 0 25px
 }
-hr.green{
+hr.bg_gray{
     border: none;
     width: 20%;
     float: right;
-    border-radius: 0 25px 25px 0;
+
     height: 5px;
-    margin: 25px 20px 0 0;
-    background: rgb(255, 255, 255);
+    margin:25px 20px 0 0;
+    border-radius: 0 25px 25px 0;
+    background: rgb(118, 117, 117);
 }
-hr.white{
+hr.bg_white{
     border: none;
     float: right;
     width: 10%;
-    background-color: green;
+    background-color: rgb(255, 255, 255);
     height: 5px;
-    margin: 0;
-    margin-top: 25px;
-    border-radius: 25px 0 0 25px
+    margin: 25px 0 0 0;
+    border-radius: 25px;
+
 }
 
 /* COLUMN  */
