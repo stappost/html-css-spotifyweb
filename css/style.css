@@ -11,7 +11,6 @@ body{
     margin-top: 100px;
 }
 .margin-10{
-     
     margin: 10px;
 }
 .d-flex{
@@ -22,9 +21,6 @@ body{
 }
 .hidden{
     display: none;
-}
-.bg_grey{
-    background-color: gray;
 }
 .rounded{
     border-radius: 50%;
@@ -45,6 +41,9 @@ body{
 .grey{
     color: gray;
 }
+.bg_grey{
+    background-color: gray;
+}
 /* MACRO BLOCCHI */
 #top{
     display: flex;
@@ -54,6 +53,8 @@ body{
     width: 75px;
     background-color: rgb(0, 0, 0);
     overflow-y: hidden;
+    padding-left: 10px;
+    font-weight: 550;
 }
 #main-content{
     background-color: rgb(18, 26, 36);
@@ -106,7 +107,6 @@ header button:hover{
 
 .songs{
     position: relative;
-    width: 100%;
 }
 .layout{
     position: absolute;
@@ -139,6 +139,7 @@ header button:hover{
 h3{
     font-size: 30px;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 .content img{
     width: 100%;
@@ -155,15 +156,16 @@ h3{
 #main-content li:hover hr{
     display: block;
 }
-.green-hover{
-    display: none; 
+.green-hover{ 
     background-color: rgb(70, 216, 70);
     height: 3px;
     border: none;
     border-radius: 30px;
     width: 40%;
-    margin: 0 30%;
-    
+    margin: 5px 30%;
+}
+.hidden-hover{
+    display: none;
 }
 
 
@@ -174,15 +176,14 @@ h3{
     justify-content: space-between;
     flex-wrap: nowrap;
 }
-.logo{
-   margin: 5px;
+img.bg_grey{
+    height: 40px;
 }
+
 .img-logo img,
 .logo img{
     width: 80%;
-    padding: 5px;
-    margin-left: 5px;
-
+    padding: 5px 0;
 }
 .hidden i.fa-square-plus{
     font-size: 40px;
@@ -190,29 +191,28 @@ h3{
     vertical-align: middle;
 }
 .small{
-    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    margin-bottom: 10px;
 }
 #sidebar .content > .logo > .grey{
     padding-top: 5px;
 }
 #sidebar hr{
-    width: 80%;
-    margin: 10px 20px 20px 20px ;
+    width: 90%;
+    margin: 10px 0 20px ;
     color: lightslategray;
 }
 #sidebar h4{
-    margin: 20px 0 5px 10px;
+    margin: 20px 0 5px 0;
 }
 #sidebar span.grey{
     padding-top: 10px;
+    margin-left: 10px;
 }
 #sidebar li.grey{
-    margin: 20px 10px;
+    margin: 20px 10px 20px 0;
     list-style-type: none;
-}
-#sidebar span.white{
-    padding: 10px;
-    font-size: 20px;
 }
 #sidebar ul.overflow{
     height: 35vh;
@@ -220,23 +220,31 @@ h3{
 }
 #sidebar i{
     width: 20%;
-    margin-left: 10px;
 }
 #sidebar li.logo:hover{
     color: white;
     cursor: pointer;
     border-left: 2px solid green;
+    padding-left: 20px;
    
+}
+#sidebar ul li.logo:first-child {
+    border-left: 2px solid green;
 }
 #sidebar .grey:hover{
     color: white;
     cursor: pointer;
 }
 #sidebar span.white{
-    padding: 10px 5px 0;
+    padding: 10px 10px 0;
     font-size: 15px;
 }
-
+#sidebar div.logo span.grey{
+    margin-top: 10px;
+}
+#sidebar li.logo span.hidden{
+    padding-top: 20px;
+}
 /* BLOCKS FOOTER  */
 #bottom .row{
     justify-content: space-between;
@@ -252,25 +260,19 @@ h3{
 .long{
     text-align: center;
 }
-#bottom .long input{
-    width: 80%;
-} 
 .icons div{
     display: flex;
     text-align: center;
     flex-direction: column;
 }
-
 .icons i{
     padding: 5px;
 }
-
-
 .player{
     text-align: center;
 }
 .player i{
-    padding: 10px 5px;
+    padding: 10px 3%;
     vertical-align: middle;
 }
 .player i.bigger{
@@ -283,19 +285,17 @@ i.bigger:hover{
 hr.bg_gray-song{
     border: none;
     width: 60%;
-    float: right;
     border-radius: 0 25px 25px 0;
     height: 8px;
-    margin: 0;
+    margin: 5px 0;
     background: rgb(118, 117, 117);
 }
 hr.bg_white-song{
     border: none;
-    float: right;
-    width: 30%;
+    width: 20%;
     background-color: rgb(255, 255, 255);
     height: 8px;
-    margin: 0;
+    margin: 5px 0;
     border-radius: 25px 0 0 25px
 }
 hr.bg_gray{
@@ -330,8 +330,8 @@ hr.bg_white{
     height: 15px;
     width: 15px;
     position: absolute;
-    top: 45px;
-    right: 60%;
+    top: 50px;
+    left: 25%;
     cursor: pointer;
 }
 #bottom .volume:hover .bg_white{
@@ -357,11 +357,21 @@ hr.bg_white{
     color: #fff;
     cursor: pointer;
 }
+.song,
+#bottom .d-flex{
+    width: 100%;
+}
+#time-left{
+    margin: 0 10px 20px 0;   
+}
+#time-right{
+    margin: 0 10px;
+    color: #fff;
+}
 /* COLUMN  */
 
 .col-30{
     width: calc(100% / 3 - 20px);
-    height: 50px;
     position: relative;
 }
 .xl{
@@ -370,15 +380,13 @@ hr.bg_white{
 }
 .col-50{
     width: calc(50% - 20px);
-    margin: 10px;
 }
 
 .col-100{
     width: 100%;
-    margin: 10px;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
     #sidebar{
         width: 200px;
     }
@@ -427,6 +435,10 @@ hr.bg_white{
     .col-50{
         width: calc(100% / 4 - 20px);
     }
+    .img-logo{
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
     
     
 }
@@ -435,16 +447,4 @@ hr.bg_white{
     .col-50{
         width: calc(100% / 6 - 20px);
     }
-    /* #bottom .xl i{
-        padding: 0 10px;
-        margin-bottom: 20px;
-        font-size: 20px;
-    }
-    #bottom .icons.right i{
-        padding: 10px;
-    }
-    #bottom .xl i.bigger{
-        font-size: 40px;
-        padding: 0 20px;
-    } */
 }
