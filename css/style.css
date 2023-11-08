@@ -95,6 +95,27 @@ header button:hover{
     width: 100%;
     flex-wrap: wrap;
 }
+
+.songs{
+    position: relative;
+    width: 100%;
+}
+.layout{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #fff;
+    font-size: 6em;
+} 
+.songs:hover .layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* CONTENT IN MAIN  */
 .col-100 ul.d-flex{
     list-style-type: none;
@@ -111,7 +132,7 @@ h3{
     font-size: 30px;
     margin-top: 20px;
 }
-.content > img{
+.content img{
     width: 100%;
 }
 #top div.white{
