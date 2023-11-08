@@ -83,7 +83,7 @@ header button{
 }
 header button:hover{
     cursor: pointer;
-    font-size: 90px;
+    font-size: 15px;
 }
 /* BLOCKS IN MAIN-CONTENT  */
 .container{
@@ -215,12 +215,16 @@ hr{
 .player i.bigger{
     font-size: 25px;
 }
+i.bigger:hover{
+    font-size: 30px;
+    cursor: pointer;
+}
 hr.bg_gray-song{
     border: none;
-    width: 70%;
+    width: 60%;
     float: right;
     border-radius: 0 25px 25px 0;
-    height: 5px;
+    height: 8px;
     margin: 0;
     background: rgb(118, 117, 117);
 }
@@ -229,7 +233,7 @@ hr.bg_white-song{
     float: right;
     width: 30%;
     background-color: rgb(255, 255, 255);
-    height: 5px;
+    height: 8px;
     margin: 0;
     border-radius: 25px 0 0 25px
 }
@@ -237,8 +241,7 @@ hr.bg_gray{
     border: none;
     width: 20%;
     float: right;
-
-    height: 5px;
+    height: 8px;
     margin:25px 20px 0 0;
     border-radius: 0 25px 25px 0;
     background: rgb(118, 117, 117);
@@ -248,12 +251,51 @@ hr.bg_white{
     float: right;
     width: 10%;
     background-color: rgb(255, 255, 255);
-    height: 5px;
+    height: 8px;
     margin: 25px 0 0 0;
     border-radius: 25px;
 
 }
 
+
+#bottom .song:hover .bg_white-song{
+    background-color: green;
+}
+#bottom .song:hover .bg_gray-song::after{
+    content: '';
+    border: 1px solid rgb(43, 43, 43);
+    background-color: white;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 40px;
+    right: 60%;
+    cursor: pointer;
+}
+#bottom .volume:hover .bg_white{
+    background-color: green;
+}
+#bottom .volume:hover .bg_gray::after{
+    content: '';
+    border: 1px solid rgb(43, 43, 43);
+    background-color: white;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 20px;
+    right: calc(20% + 20px);
+    cursor: pointer;
+}
+#bottom .name .grey:hover{
+    color: #fff;
+    cursor: pointer;
+}
+#bottom .icons div i:hover{
+    color: #fff;
+    cursor: pointer;
+}
 /* COLUMN  */
 .col{
      
@@ -263,9 +305,11 @@ hr.bg_white{
     width: calc(100% / 3 - 20px);
     height: 50px;
     margin: 10px 0;
+    position: relative;
 }
 .xl{
     width: 150px;
+   
 }
 .col-50{
     width: calc(50% - 20px);
