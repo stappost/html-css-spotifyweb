@@ -144,6 +144,19 @@ h3{
     color: white;
     cursor: pointer;
 }
+#main-content li:hover hr{
+    display: block;
+}
+.green-hover{
+    display: none; 
+    background-color: rgb(70, 216, 70);
+    height: 3px;
+    border: none;
+    border-radius: 30px;
+    width: 40%;
+    margin: 0 30%;
+    
+}
 
 
 /* BLOCK IN SIDEBAR  */
@@ -194,6 +207,12 @@ h3{
 #sidebar i{
     width: 20%;
     margin-left: 10px;
+}
+#sidebar li.logo:hover{
+    color: white;
+    cursor: pointer;
+    border-left: 2px solid green;
+   
 }
 #sidebar .grey:hover{
     color: white;
