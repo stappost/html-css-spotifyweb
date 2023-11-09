@@ -34,6 +34,9 @@ body{
 .right{
     text-align: right;
 }
+.pointer{
+    cursor: pointer;
+}
 /* COLORS  */
 .white{
     color: white;
@@ -311,7 +314,6 @@ hr.bg_white{
     height: 8px;
     margin: 25px 0 0 0;
     border-radius: 25px;
-
 }
 
 
@@ -356,6 +358,9 @@ hr.bg_white{
 }
 #bottom .icons div i:hover{
     color: #fff;
+    cursor: pointer;
+}
+#bottom .player i{
     cursor: pointer;
 }
 .song,
